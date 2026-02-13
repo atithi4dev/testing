@@ -1,8 +1,13 @@
 require('dotenv').config(); // Load env variables
 const express = require('express');
-
+const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 5000;
+app.use(cors({
+  origin: process.env.FRONTEND_URL,
+  methods: ['GET','POST','PUT','DELETE'],
+  credentials: true
+}));
 
 app.use(express.json());
 

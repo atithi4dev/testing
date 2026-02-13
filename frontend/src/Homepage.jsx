@@ -6,8 +6,8 @@ function HomePage() {
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-
+    e.preventDefault(); 
+    console.log(backendUrl);
     try {
       const res = await fetch(`${backendUrl}/api/send-info`, {
         method: "POST",
