@@ -4,7 +4,7 @@ import HomePage from './Homepage';
 function App() {
   return (
     <div>
-      <h1>JUST SAYING HELLO NOTHING ELSE;</h1>
+      <h1>Check 1</h1>
       {/* <HomePage /> */}
     </div>
   );
