@@ -11,7 +11,7 @@ app.use(cors({
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  console.log('Received from frontend:', "HEALTHCHECK");
+  console.log('Received from fronted:', "HEALTHCHECK");
   res.send(`Hello user, this is healthcheck route.`);
 });
 
