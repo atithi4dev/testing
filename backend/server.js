@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
   console.log('Received from frontend:', "HEALTHCHECKKK");
-  res.send(`Hello user, this is routing check`);
+  res.send(`Hello user, this is routing check 2`);
 });
 
 app.post('/api/send-info', (req, res) => {
