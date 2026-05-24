@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
   console.log('Received from frontend:', "HEALTHCHECKKK");
-  res.send(`Hello user, this is Atithi .`);
+  res.send(`Hello user, this is Atithi 123 .`);
 });
 
 app.post('/api/send-info', (req, res) => {
